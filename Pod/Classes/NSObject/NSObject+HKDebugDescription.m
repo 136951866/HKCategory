@@ -7,7 +7,7 @@
 //
 
 #import "NSObject+HKDebugDescription.h"
-
+#import<objc/runtime.h>
 @implementation NSObject (HKDebugDescription)
 
 - (NSString *)debugDescription{

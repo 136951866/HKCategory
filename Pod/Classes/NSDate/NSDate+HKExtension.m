@@ -177,17 +177,18 @@
 }
 
 + (BOOL)compareDateWithStartTimeStamp:(NSTimeInterval)startTimeStamp endTimeStamp:(NSTimeInterval)endTimeStamp {
-    NSDate *nowDate = [NSDate date];
-    NSDate *startDate = [[[NSDate dateWithTimeIntervalSince1970:startTimeStamp/1000] dateWithFormat:@"yyyy-MM-dd HH:mm:ss"] converToDate:@"yyyy-MM-dd HH:mm:ss"];
-//    NSString *str = [NSDate stringWithFormat:@"yyyy-MM-dd" timeStamp:endTimeStamp];
-//    NSDate *a = [str converToDate:@"yyyy-MM-dd"];
-    NSDate *endDate = [[NSDate stringWithFormat:@"yyyy-MM-dd HH:mm:ss" timeStamp:endTimeStamp] converToDate:@"yyyy-MM-dd HH:mm:ss"];
-    //[[[NSDate dateWithTimeIntervalSince1970:endTimeStamp/1000] dateWithFormat:@"yyyy-MM-dd"] converToDate:@"yyyy-MM-dd"];
-    if (([nowDate compare:startDate] == NSOrderedDescending || [nowDate compare:startDate] == NSOrderedSame) && ([nowDate compare:endDate] == NSOrderedAscending || [nowDate compare:endDate] == NSOrderedSame)) {
-        return YES;
-    } else {
-        return NO;
-    }
+    return NO;
+//    NSDate *nowDate = [NSDate date];
+//    NSDate *startDate = [[[NSDate dateWithTimeIntervalSince1970:startTimeStamp/1000] dateWithFormat:@"yyyy-MM-dd HH:mm:ss"] converToDate:@"yyyy-MM-dd HH:mm:ss"];
+////    NSString *str = [NSDate stringWithFormat:@"yyyy-MM-dd" timeStamp:endTimeStamp];
+////    NSDate *a = [str converToDate:@"yyyy-MM-dd"];
+//    NSDate *endDate = [[NSDate stringWithFormat:@"yyyy-MM-dd HH:mm:ss" timeStamp:endTimeStamp] converToDate:@"yyyy-MM-dd HH:mm:ss"];
+//    //[[[NSDate dateWithTimeIntervalSince1970:endTimeStamp/1000] dateWithFormat:@"yyyy-MM-dd"] converToDate:@"yyyy-MM-dd"];
+//    if (([nowDate compare:startDate] == NSOrderedDescending || [nowDate compare:startDate] == NSOrderedSame) && ([nowDate compare:endDate] == NSOrderedAscending || [nowDate compare:endDate] == NSOrderedSame)) {
+//        return YES;
+//    } else {
+//        return NO;
+//    }
 }
 
 + (BOOL)compareDateWithStartTimeString:(NSString *)startTimeString endTimeString:(NSString *)endTimeString {

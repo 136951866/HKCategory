@@ -25,5 +25,7 @@
 #import "NSObject+HKDebugDescription.h"
 #import "NSArray+HKErrorHandle.h"
 #import "NSMutableArray+HKErrorHandle.h"
-
+#import "UIButton+HKExtension.h"
+#import "NSDate+HKExtension.h"
+#import "UIImage+HKQRCode.h"
 #endif /* HKCategoryHeader_h */
